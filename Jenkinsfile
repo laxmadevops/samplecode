@@ -1,5 +1,8 @@
 pipeline{
-        agent any  
+        agent any
+	 environment { 
+  CRED = credentials('Forgot@1993') 
+ }
         stages{
               stage('Quality Gate Statuc Check'){
                   steps{
